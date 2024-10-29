@@ -32,7 +32,7 @@ const Register = () => {
     <div className="container"> 
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='register'>
           <label>Name:</label>
           <input
             type="text"
@@ -40,8 +40,6 @@ const Register = () => {
             onChange={(e) => setName(e.target.value)}
             required
           />
-        </div>
-        <div>
           <label>Email:</label>
           <input
             type="email"
@@ -49,8 +47,6 @@ const Register = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </div>
-        <div>
           <label>Password:</label>
           <input
             type="password"
